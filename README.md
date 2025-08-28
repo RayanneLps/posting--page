@@ -1,0 +1,1 @@
+Este projeto foi feito para testar meus conhecimentos práticos em HTML,CSS e JavaScript, lidando com eventos em DOM. É a simulação de um blog onde é carregado os comentários já criados e você pode adicionar seu próprio comentário colocando o título e o conteúdo do post. O seu comentário aparecerá acima, sendo assima visualização é dos mais recentes para os menos recentes.
