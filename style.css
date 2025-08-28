@@ -1,0 +1,199 @@
+@font-face {
+    font-family: 'Camiro';
+    src: url('Camiro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+:root {
+    --primary-color: #c40404;
+    --primary-color-dark: #7c0303;
+    --text-color: #333;
+    --background-color: #f9f9f9e1;
+}
+* {
+    box-sizing: border-box;
+}
+html{
+    background-color: yellow;
+}
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--background-color);
+}
+/*header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}*/
+header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 10px 0;
+    max-width: 664px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+}
+
+.header-container {
+    margin: 0 auto;
+    padding: 0 2rem; 
+}
+
+header h1 {
+    margin: 0;
+    font-family: 'Camiro', sans-serif;
+    font-size: 2.5em;
+}
+main {
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px; /* espaçamento entre os elementos */
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background: #fff;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.05);
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block; 
+}
+hr {
+  border: none;
+  border-top: 3px solid  var(--primary-color); 
+  width: 600px;                   
+  margin: 60px auto;             
+}
+#form-input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+}
+#input-title {
+    width: 400px;          
+    height: 40px;          
+    padding: 10px;         
+    font-size: 16px;      
+}
+#input-post {
+    width: 400px;         
+    height: 120px;         
+    padding: 10px;        
+    font-size: 14px;      
+    resize: vertical;   
+}
+#submit-button, #submit-button:focus {
+    width: 150px;          
+    height: 40px;          
+    background-color: var(--primary-color); 
+    color: white;         
+    border: none;          
+    border-radius: 5px;   
+    font-size: 16px;       
+    cursor: pointer;   
+    font-family: 'Camiro', sans-serif;    
+    font-weight: bold;
+    font-size: medium;
+}
+#submit-button:hover {
+    background-color: var(--primary-color-dark); 
+}
+#posts {
+    width: 80%;           
+    max-width: 800px;    
+    display: flex;
+    flex-direction: column;
+    gap: 20px; 
+}
+.post {
+    background-color: white; 
+    border: 1px solid #ddd;  
+    border-radius: 5px;     
+    padding: 15px;          
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+ul {
+    list-style-type: none; 
+    padding: 0;            
+}
+#post-h2 {
+    margin: 0 95px 10px auto;    
+    font-size: 1.5em;     
+    font-weight: bold;
+}
+#title-container,
+#post-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+label {
+    width: 100px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    font-size: 1rem;
+}
+/*.comment-card {
+    border-top: 1px solid #eee; 
+    padding-top: 10px;          
+    margin-top: 10px;          
+}*/
+.comment-card {
+  background: #fff;
+  border: 2px solid #ccc;
+  border-radius: 20px;
+  padding: 20px;
+  margin: 20px 0;
+  position: relative;
+  max-width: 500px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* seta na esquerda */
+.comment-card::before {
+  content: "";
+  position: absolute;
+  top: 20px;              /* altura da seta */
+  left: -15px;            /* posição fora do card */
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 15px solid #fff;   /* cor igual ao fundo */
+}
+
+/* borda da seta */
+.comment-card::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: -18px;   /* ligeiramente mais pra fora */
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  border-right: 18px solid #ccc; /* cor da borda */
+}
+
